@@ -38,7 +38,7 @@ async function fetchTodoList(){
     <Header searchText={searchText} setSearchText={setSearchText} />
     <ToastContainer/>
     <div className="container">
-        <div className="row justify-content-md-center mt-4">
+        <div className="display-grid mt-4">
            {
             filteredList.map((todo)=><Todo todo={todo} key={todo._id} setRefreshList={setRefreshList}/>
 

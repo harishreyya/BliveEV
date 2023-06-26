@@ -1,4 +1,5 @@
 import { Header } from './components/partials/header';
+import './App.css';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import { Home } from './components/Home';
 import { Register } from './components/register';

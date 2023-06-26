@@ -53,8 +53,9 @@ if(result.status == 200){
 }
     return <>
     <Header/>
-    <div className="container card mt-4">
     <ToastContainer/>
+    <div className="container card mt-4 register-login-box">
+    
         <h3 className="">Login</h3>
     <div className="form-group">
       <label for="exampleInputEmail1" className="form-label mt-4">Email or Username</label>

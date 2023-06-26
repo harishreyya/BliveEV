@@ -4,7 +4,6 @@ import mongoose from "mongoose";
 import { DB_CONNECT } from "./utils/constants.js";
 import { AuthMiddleware } from "./middlewares/AuthMiddleware.js";
 import  cors from 'cors';
-require('dotenv').config(); 
 const app = express();
 
 mongoose.connect(DB_CONNECT,{

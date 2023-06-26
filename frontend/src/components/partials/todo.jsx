@@ -30,27 +30,28 @@ const handleMarkTodo = async ()=>{
 }
 
 return <>
-    <div className="col-sm-3 mx-3 my-2 alert bg-light">
-      <div className="card-header">
+    <div className="todo-card">
+      <div className="card-header bottom-right">
  {todo.isCompleted ? "Completed" : 'Not Completed'}
       </div>
+      <br />
       <div className="card-body">
-      <h5 className="card-title" style={{textDecoration: todo.isCompleted?'line-through':'none'}}>{todo.desc}</h5>
-       <p className="card-text">{moment(todo.date).fromNow()}</p>
-       
+      <h6 className="card-title" style={{textDecoration: todo.isCompleted?'line-through':'none'}}>{todo.desc}</h6>
       </div>
+      <br />
       <div className="actionButtons d-flex" style={{justifyContent:"space-between",alignItems:"center"}}>
         <div className="deleteButton">
-            <button className="" onClick={handleDelete}>delete</button>
+            <button className="btn btn-danger" onClick={handleDelete}>delete</button>
         </div>
         <div className="markTodo">
-            <button className="" onClick={handleMarkTodo}>
+            <button className="btn btn-success" onClick={handleMarkTodo}>
                 {
                     todo.isCompleted?'Mark Uncomplete' : 'Mark Complete'
                 }
             </button>
         </div>
        </div>
+       <small className="bottom-right"><b>{moment(todo.date).fromNow()}</b> </small>
     </div>
 </>
 }
