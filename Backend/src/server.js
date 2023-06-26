@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 4000
 const app = express();
 
 mongoose.connect(DB_CONNECT,{
-    useNewUrlParser:true
+    useNewUrlParser:true,
+    useUnifiedTopology: true
 })
 app.use(cors())
 app.use(express.json())
