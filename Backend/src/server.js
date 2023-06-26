@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import { DB_CONNECT } from "./utils/constants.js";
 import { AuthMiddleware } from "./middlewares/AuthMiddleware.js";
 import  cors from 'cors';
+
+const PORT = process.env.PORT || 4000
 const app = express();
 
 mongoose.connect(DB_CONNECT,{
@@ -13,7 +15,7 @@ app.use(cors())
 app.use(express.json())
 app.use('/api/',apiRoute);
 app.use('/api/',AuthMiddleware,apiProtected);
-app.listen(4000,()=>{
-    console.log("server is listening on 4000")
+app.listen(PORT,()=>{
+    console.log(`server is listening on ${PORT}`)
 })
 
