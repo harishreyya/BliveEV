@@ -10,7 +10,7 @@ The key features of application.
 - validation and error handling for API requests
 - authentication and authorization mechanisms to ensure secure access to the API endpoints
 - APIs for retrieving task statistics, such as completed tasks, pending tasks
-
+- searching tasks with search bar
 
 ## design decisions or assumptions
 List your design desissions & assumptions
@@ -23,37 +23,72 @@ I created cloud database using MongoDb Atlas. So, if you want to run our code th
 - After installation, now run `npm run server` and  you will see `server is listening on 4000` 
 - Simlutaniously, open a new terminal and run `cd frontend` by which you get into frontend folder
 - Now here, run `npm install` or `npm i` which will install all the required packages of react aswell
-- After installation, now run `npm start` and  you will see a new window will be opening in the default browser
-- 
+- After installation, now run `npm start` and  you will see a new window will be opening in the default browser which is running on port `http://localhost:3000`
+- Open MongoDb compass and url `mongodb://localhost:27017/todo` which will create database collection named todo
+- Now you see app running, you can click on `Register` to sign in and after that you will be redirected to Home page where you can create tasks and enjoy.
 
-```bash
-npm install my-project
-cd my-project
-npm start
-```
 
 ## Usage
-Provide instructions and examples on how to use your project.
+As there are some validations please follow this when using -
+ - Regsiter first with name, username, email and password
+ - Name should be `Alphabets only`
+ - username should be having `atleast one number or one alphabet`
+ - After registering anytime you can logout and login with your credentials
+ - Create tasks clicking on `Add` button
+ - Mark todo if done or delete it whenever not needed with `Delete` and `complete` buttons
 
-```bash
-# Example
-```
 
-Include screenshots as necessary.
+
 
 ## APIs Used
 If your application relies on external APIs, document them and include any necessary links or references.
 
 ## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
-
+Backend Applications provide a list of API endpoints-
+GET /api/todoList - retrieve all tasks
+POST /api/createTodo - create a new task
+PATCH /api/markTodo - mark tasks as complete or incomplete
+DELETE /api/deleteTodo - deleting a task
+POST /api/register - registering into app
+POST /api/login - login into app
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
-- Node.js
-- Express.js
 - MongoDB
-- Other libraries/modules
+- Express JS
+- React JS
+- Node JS
+ 
+ ### Dependencies and packages
+
+#### Backend
+- express-validator
+  used for validation
+- mongoose
+  connecting MongoDB to the Node. js server
+- jsonwebtoken
+  generate a token for securely transmitting information
+- nodemon
+  It monitors your project and automatically restarts when detects any changes.
+- cors
+  allowing browser should permit loading resources
+- dotenv
+  to store “environment variables”
+
+#### Frontend
+- axios
+  JavaScript library to make HTTP requests or fetching data
+- moment 
+  for displaying dates and times in JavaScript
+- react-router-dom
+  implementaion of dynamic routing 
+- react-toastify
+  pacakge used to display backend messages
+- bootstrap.min.css
+  a file which I used from `bootswatch` free theme for bootstrap to style the app components like for headers, forms, buttons etc.
+
+#### Cloud Deployment
+
+- AWS 
+used EC2 for deploying the MongoDb and node js (Backend)

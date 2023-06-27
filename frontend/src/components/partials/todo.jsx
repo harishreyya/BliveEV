@@ -43,6 +43,7 @@ return <>
         <div className="deleteButton">
             <button className="btn btn-danger" onClick={handleDelete}>delete</button>
         </div>
+       
         <div className="markTodo">
             <button className="btn btn-success" onClick={handleMarkTodo}>
                 {
@@ -51,6 +52,7 @@ return <>
             </button>
         </div>
        </div>
+       <br />
        <small className="bottom-right"><b>{moment(todo.date).fromNow()}</b> </small>
     </div>
 </>

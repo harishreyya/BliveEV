@@ -101,7 +101,7 @@ if(result.status===200){
       name="password" className="form-control" placeholder="Password"/>
      {
         errors?.password &&
-        <small id="emailHelp" class="form-text text-danger">{errors.password.msg}</small>
+        <small id="emailHelp" class="form-text text-danger">password should be at least 8</small>
       }
     </div>
 

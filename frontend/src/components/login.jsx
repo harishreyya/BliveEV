@@ -66,7 +66,7 @@ if(result.status == 200){
       
       {
         errors?.username &&
-        <small id="emailHelp" class="form-text text-muted">{errors.username.msg}</small>
+        <small id="emailHelp" class="form-text text-danger">{errors.username.msg}</small>
       }
     </div>
     <div className="form-group">
@@ -77,7 +77,7 @@ if(result.status == 200){
      
      {
         errors?.password &&
-        <small id="emailHelp" class="form-text text-muted">{errors.password.msg}</small>
+        <small id="emailHelp" class="form-text text-danger">{errors.password.msg}</small>
       }
 
     </div>
