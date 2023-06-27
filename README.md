@@ -12,7 +12,7 @@ The key features of application.
 - APIs for retrieving task statistics, such as completed tasks, pending tasks
 - searching tasks with search bar
 
-## deployed link
+## Deployed link
 [link](http://65.0.169.168:3000/)
 
 ## Installation or How to run the app
