@@ -59,29 +59,29 @@ List and provide a brief overview of the technologies used in the project.
  ### Dependencies and packages
 
 #### Backend
-- express-validator
-  used for validation
-- mongoose
+- express-validator <br/>
+   used for validation
+- mongoose<br/>
   connecting MongoDB to the Node js server
-- jsonwebtoken
+- jsonwebtoken<br/>
   generate a token for securely transmitting information
-- nodemon
+- nodemon<br/>
   It monitors your project and automatically restarts when detects any changes.
-- cors
+- cors<br/>
   allowing browser should permit loading resources
-- dotenv
+- dotenv<br/>
   to store “environment variables”
 
 #### Frontend
-- axios
+- axios<br/>
   JavaScript library to make HTTP requests or fetching data
-- moment 
+- moment <br/>
   for displaying dates and times in JavaScript
-- react-router-dom
+- react-router-dom<br/>
   implementaion of dynamic routing 
-- react-toastify
+- react-toastify<br/>
   pacakge used to display backend messages
-- bootstrap.min.css
+- bootstrap.min.css<br/>
   a file which I used from `bootswatch` free theme for bootstrap to style the app components like for headers, forms, buttons etc.
 
 #### Cloud Deployment
