@@ -12,8 +12,8 @@ The key features of application.
 - APIs for retrieving task statistics, such as completed tasks, pending tasks
 - searching tasks with search bar
 
-## design decisions or assumptions
-List your design desissions & assumptions
+## Deployed link
+[link](http://65.0.169.168:3000/)
 
 ## Installation or How to run the app
 I created cloud database using MongoDb Atlas. So, if you want to run our code then please read the instructions below :
@@ -39,18 +39,14 @@ As there are some validations please follow this when using -
 
 
 
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
-
 ## API Endpoints
-Backend Applications provide a list of API endpoints-
-GET /api/todoList - retrieve all tasks
-POST /api/createTodo - create a new task
-PATCH /api/markTodo - mark tasks as complete or incomplete
-DELETE /api/deleteTodo - deleting a task
-POST /api/register - registering into app
-POST /api/login - login into app
+Backend Applications provide a list of API endpoints
+- GET /api/todoList - retrieve all tasks
+- POST /api/createTodo - create a new task
+- PATCH /api/markTodo - mark tasks as complete or incomplete
+- DELETE /api/deleteTodo - deleting a task
+- POST /api/register - registering into app
+- POST /api/login - login into app
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
@@ -63,32 +59,32 @@ List and provide a brief overview of the technologies used in the project.
  ### Dependencies and packages
 
 #### Backend
-- express-validator
-  used for validation
-- mongoose
+- `express-validator` <br/>
+   used for validation
+- `mongoose`<br/>
   connecting MongoDB to the Node js server
-- jsonwebtoken
+- `jsonwebtoken`<br/>
   generate a token for securely transmitting information
-- nodemon
+- `nodemon`<br/>
   It monitors your project and automatically restarts when detects any changes.
-- cors
+- `cors`<br/>
   allowing browser should permit loading resources
-- dotenv
+- `dotenv`<br/>
   to store “environment variables”
 
 #### Frontend
-- axios
+- `axios`<br/>
   JavaScript library to make HTTP requests or fetching data
-- moment 
+- `moment` <br/>
   for displaying dates and times in JavaScript
-- react-router-dom
+- `react-router-dom`<br/>
   implementaion of dynamic routing 
-- react-toastify
+- `react-toastify`<br/>
   pacakge used to display backend messages
-- bootstrap.min.css
+- `bootstrap.min.css`<br/>
   a file which I used from `bootswatch` free theme for bootstrap to style the app components like for headers, forms, buttons etc.
 
 #### Cloud Deployment
 
-- AWS 
-used EC2 for deploying the MongoDb and node js (Backend)
+- `AWS`
+used EC2 for deploying the MongoDb (database), node js (Backend) and react js (frontend)
