@@ -66,7 +66,7 @@ List and provide a brief overview of the technologies used in the project.
 - express-validator
   used for validation
 - mongoose
-  connecting MongoDB to the Node. js server
+  connecting MongoDB to the Node js server
 - jsonwebtoken
   generate a token for securely transmitting information
 - nodemon
