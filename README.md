@@ -39,10 +39,6 @@ As there are some validations please follow this when using -
 
 
 
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
-
 ## API Endpoints
 Backend Applications provide a list of API endpoints
 - GET /api/todoList - retrieve all tasks
