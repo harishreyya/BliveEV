@@ -12,8 +12,8 @@ The key features of application.
 - APIs for retrieving task statistics, such as completed tasks, pending tasks
 - searching tasks with search bar
 
-## design decisions or assumptions
-List your design desissions & assumptions
+## deployed link
+[link](http://65.0.169.168:3000/)
 
 ## Installation or How to run the app
 I created cloud database using MongoDb Atlas. So, if you want to run our code then please read the instructions below :
@@ -44,13 +44,13 @@ As there are some validations please follow this when using -
 If your application relies on external APIs, document them and include any necessary links or references.
 
 ## API Endpoints
-Backend Applications provide a list of API endpoints-
-GET /api/todoList - retrieve all tasks
-POST /api/createTodo - create a new task
-PATCH /api/markTodo - mark tasks as complete or incomplete
-DELETE /api/deleteTodo - deleting a task
-POST /api/register - registering into app
-POST /api/login - login into app
+Backend Applications provide a list of API endpoints
+- GET /api/todoList - retrieve all tasks
+- POST /api/createTodo - create a new task
+- PATCH /api/markTodo - mark tasks as complete or incomplete
+- DELETE /api/deleteTodo - deleting a task
+- POST /api/register - registering into app
+- POST /api/login - login into app
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
@@ -91,4 +91,4 @@ List and provide a brief overview of the technologies used in the project.
 #### Cloud Deployment
 
 - AWS 
-used EC2 for deploying the MongoDb and node js (Backend)
+used EC2 for deploying the MongoDb (database), node js (Backend) and react js (frontend)
