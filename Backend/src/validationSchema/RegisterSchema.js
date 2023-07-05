@@ -1,14 +1,14 @@
 import { check } from "express-validator";
 
 export const RegisterSchema=[
-    check('name').isAlpha().withMessage("Alphabets only"),
-    check('username','username is required').exists().isAlphanumeric().withMessage("atleast one alphabet or one number required").isLength({
+    check('name').isAlpha().withMessage("alphabets only"),
+    check('username','at least 6 letters').exists().isAlphanumeric().withMessage("username is required").isLength({
         min:6,
         max:32
     }),
-    check('password','password is required').isLength({
+    check('password','at least 8 letters').exists().isLength({
         min:8,
         max:50
     }),
-    check('email','email is required').exists().isEmail(),
+    check('email','valid email is required').exists().isEmail(),
 ]

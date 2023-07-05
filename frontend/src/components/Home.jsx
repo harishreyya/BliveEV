@@ -54,7 +54,7 @@ async function fetchTodoList(){
         </div>
     </div>
 
-    <div className="" style={{position: 'fixed', right:50,bottom:100,zIndex:1030}}>
+    <div className="" style={{position: 'fixed', right:50, bottom:100, zIndex:1030}}>
       <button className="btn btn-primary" type="button" data-bs-toggle = "modal" data-bs-target = "#exampleModal"> Add Task</button>
     </div>
 
